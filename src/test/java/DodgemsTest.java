@@ -4,6 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class DodgemsTest {
+
     Dodgems dodgems;
 
     @Before
@@ -24,7 +25,9 @@ public class DodgemsTest {
 
     @Test
     public void hasRatings(){
-        assertEquals(5, dodgems.getRating());
+        assertEquals(5, dodgems.rating);
     }
+
+    
 
 }

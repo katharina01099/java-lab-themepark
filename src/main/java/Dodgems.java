@@ -1,6 +1,6 @@
-public class Dodgems extends Attraction {
+public class Dodgems extends Attraction implements IReview {
 
-    int rating;
+
 
     public Dodgems(String name, int rating) {
         super(name);
@@ -12,16 +12,10 @@ public class Dodgems extends Attraction {
         return name;
     }
 
-//    @Override
-//    public void agerestriction(int age){
-//        this.age = age;
-//    }
-
-
-    public int getRating(){
-        return rating;
+    @Override
+    public void rating(int rating){
+        this.rating = rating;
 
     }
-
 
 }
