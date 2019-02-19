@@ -9,7 +9,7 @@ public class DodgemsTest {
 
     @Before
     public void before(){
-        dodgems = new Dodgems("Crashcourse", 5);
+        dodgems = new Dodgems("Crashcourse", 5, true);
     }
 
     @Test
@@ -28,6 +28,11 @@ public class DodgemsTest {
         assertEquals(5, dodgems.rating);
     }
 
-    
+    @Test
+    public void hasAgerestrictions(){
+        assertEquals(true, dodgems.agerestriction);
+    }
+
+
 
 }

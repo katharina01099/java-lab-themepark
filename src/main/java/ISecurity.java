@@ -1,4 +1,4 @@
 public interface ISecurity {
 
-    void agerestriction(int age);
+    void agerestriction(boolean accessAllowed);
 }
